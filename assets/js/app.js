@@ -8,13 +8,13 @@ const lugares = [
     estadoActual: "Plasma",
     modifier: "hot",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: 5400, max: 5600, estado: "Plasma" },
-      { dia: "Martes",   min: 5350, max: 5650, estado: "Plasma" },
-      { dia: "Miércoles",min: 5300, max: 5700, estado: "Llamarada" },
-      { dia: "Jueves",   min: 5500, max: 5800, estado: "Llamarada" },
-      { dia: "Viernes",  min: 5450, max: 5750, estado: "Plasma" },
-      { dia: "Sábado",   min: 5380, max: 5620, estado: "Plasma" },
-      { dia: "Domingo",  min: 5320, max: 5580, estado: "Llamarada" },
+      { dia: "Lunes", min: 5400, max: 5600, estado: "Plasma" },
+      { dia: "Martes", min: 5350, max: 5650, estado: "Plasma" },
+      { dia: "Miércoles", min: 5300, max: 5700, estado: "Llamarada" },
+      { dia: "Jueves", min: 5500, max: 5800, estado: "Llamarada" },
+      { dia: "Viernes", min: 5450, max: 5750, estado: "Plasma" },
+      { dia: "Sábado", min: 5380, max: 5620, estado: "Plasma" },
+      { dia: "Domingo", min: 5320, max: 5580, estado: "Llamarada" },
     ],
   },
   {
@@ -26,13 +26,13 @@ const lugares = [
     estadoActual: "Soleado",
     modifier: "warm",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -170, max: 420, estado: "Soleado" },
-      { dia: "Martes",   min: -180, max: 430, estado: "Soleado" },
-      { dia: "Miércoles",min: -160, max: 410, estado: "Soleado" },
-      { dia: "Jueves",   min: -175, max: 425, estado: "Soleado" },
-      { dia: "Viernes",  min: -165, max: 415, estado: "Ventoso" },
-      { dia: "Sábado",   min: -170, max: 420, estado: "Soleado" },
-      { dia: "Domingo",  min: -180, max: 430, estado: "Ventoso" },
+      { dia: "Lunes", min: -170, max: 420, estado: "Soleado" },
+      { dia: "Martes", min: -180, max: 430, estado: "Soleado" },
+      { dia: "Miércoles", min: -160, max: 410, estado: "Soleado" },
+      { dia: "Jueves", min: -175, max: 425, estado: "Soleado" },
+      { dia: "Viernes", min: -165, max: 415, estado: "Ventoso" },
+      { dia: "Sábado", min: -170, max: 420, estado: "Soleado" },
+      { dia: "Domingo", min: -180, max: 430, estado: "Ventoso" },
     ],
   },
   {
@@ -44,13 +44,13 @@ const lugares = [
     estadoActual: "Tormentoso",
     modifier: "hot",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: 460, max: 470, estado: "Tormentoso" },
-      { dia: "Martes",   min: 458, max: 468, estado: "Tormentoso" },
-      { dia: "Miércoles",min: 462, max: 472, estado: "Ácido" },
-      { dia: "Jueves",   min: 461, max: 469, estado: "Tormentoso" },
-      { dia: "Viernes",  min: 459, max: 467, estado: "Ácido" },
-      { dia: "Sábado",   min: 463, max: 471, estado: "Tormentoso" },
-      { dia: "Domingo",  min: 460, max: 466, estado: "Ácido" },
+      { dia: "Lunes", min: 460, max: 470, estado: "Tormentoso" },
+      { dia: "Martes", min: 458, max: 468, estado: "Tormentoso" },
+      { dia: "Miércoles", min: 462, max: 472, estado: "Ácido" },
+      { dia: "Jueves", min: 461, max: 469, estado: "Tormentoso" },
+      { dia: "Viernes", min: 459, max: 467, estado: "Ácido" },
+      { dia: "Sábado", min: 463, max: 471, estado: "Tormentoso" },
+      { dia: "Domingo", min: 460, max: 466, estado: "Ácido" },
     ],
   },
   {
@@ -62,13 +62,13 @@ const lugares = [
     estadoActual: "Nublado",
     modifier: "mild",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: 10, max: 22, estado: "Soleado" },
-      { dia: "Martes",   min: 12, max: 24, estado: "Soleado" },
-      { dia: "Miércoles",min:  8, max: 18, estado: "Lluvioso" },
-      { dia: "Jueves",   min:  9, max: 17, estado: "Nublado" },
-      { dia: "Viernes",  min: 11, max: 20, estado: "Soleado" },
-      { dia: "Sábado",   min: 13, max: 23, estado: "Soleado" },
-      { dia: "Domingo",  min:  7, max: 16, estado: "Lluvioso" },
+      { dia: "Lunes", min: 10, max: 22, estado: "Soleado" },
+      { dia: "Martes", min: 12, max: 24, estado: "Soleado" },
+      { dia: "Miércoles", min: 8, max: 18, estado: "Lluvioso" },
+      { dia: "Jueves", min: 9, max: 17, estado: "Nublado" },
+      { dia: "Viernes", min: 11, max: 20, estado: "Soleado" },
+      { dia: "Sábado", min: 13, max: 23, estado: "Soleado" },
+      { dia: "Domingo", min: 7, max: 16, estado: "Lluvioso" },
     ],
   },
   {
@@ -80,13 +80,13 @@ const lugares = [
     estadoActual: "Tormenta de polvo",
     modifier: "cold",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -90,  max: -40, estado: "Tormenta de polvo" },
-      { dia: "Martes",   min: -85,  max: -35, estado: "Despejado" },
-      { dia: "Miércoles",min: -95,  max: -50, estado: "Tormenta de polvo" },
-      { dia: "Jueves",   min: -80,  max: -30, estado: "Despejado" },
-      { dia: "Viernes",  min: -75,  max: -25, estado: "Despejado" },
-      { dia: "Sábado",   min: -88,  max: -40, estado: "Tormenta de polvo" },
-      { dia: "Domingo",  min: -92,  max: -45, estado: "Despejado" },
+      { dia: "Lunes", min: -90, max: -40, estado: "Tormenta de polvo" },
+      { dia: "Martes", min: -85, max: -35, estado: "Despejado" },
+      { dia: "Miércoles", min: -95, max: -50, estado: "Tormenta de polvo" },
+      { dia: "Jueves", min: -80, max: -30, estado: "Despejado" },
+      { dia: "Viernes", min: -75, max: -25, estado: "Despejado" },
+      { dia: "Sábado", min: -88, max: -40, estado: "Tormenta de polvo" },
+      { dia: "Domingo", min: -92, max: -45, estado: "Despejado" },
     ],
   },
   {
@@ -98,13 +98,13 @@ const lugares = [
     estadoActual: "Tormenta",
     modifier: "cold",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -120, max: -100, estado: "Tormenta" },
-      { dia: "Martes",   min: -115, max: -105, estado: "Tormenta" },
-      { dia: "Miércoles",min: -118, max: -102, estado: "Ventoso" },
-      { dia: "Jueves",   min: -112, max:  -98, estado: "Tormenta" },
-      { dia: "Viernes",  min: -110, max:  -95, estado: "Ventoso" },
-      { dia: "Sábado",   min: -116, max: -100, estado: "Tormenta" },
-      { dia: "Domingo",  min: -119, max: -103, estado: "Tormenta" },
+      { dia: "Lunes", min: -120, max: -100, estado: "Tormenta" },
+      { dia: "Martes", min: -115, max: -105, estado: "Tormenta" },
+      { dia: "Miércoles", min: -118, max: -102, estado: "Ventoso" },
+      { dia: "Jueves", min: -112, max: -98, estado: "Tormenta" },
+      { dia: "Viernes", min: -110, max: -95, estado: "Ventoso" },
+      { dia: "Sábado", min: -116, max: -100, estado: "Tormenta" },
+      { dia: "Domingo", min: -119, max: -103, estado: "Tormenta" },
     ],
   },
   {
@@ -116,13 +116,13 @@ const lugares = [
     estadoActual: "Ventoso",
     modifier: "cold",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -150, max: -130, estado: "Ventoso" },
-      { dia: "Martes",   min: -145, max: -135, estado: "Ventoso" },
-      { dia: "Miércoles",min: -148, max: -132, estado: "Tormenta" },
-      { dia: "Jueves",   min: -142, max: -128, estado: "Ventoso" },
-      { dia: "Viernes",  min: -140, max: -125, estado: "Despejado" },
-      { dia: "Sábado",   min: -147, max: -130, estado: "Ventoso" },
-      { dia: "Domingo",  min: -150, max: -135, estado: "Tormenta" },
+      { dia: "Lunes", min: -150, max: -130, estado: "Ventoso" },
+      { dia: "Martes", min: -145, max: -135, estado: "Ventoso" },
+      { dia: "Miércoles", min: -148, max: -132, estado: "Tormenta" },
+      { dia: "Jueves", min: -142, max: -128, estado: "Ventoso" },
+      { dia: "Viernes", min: -140, max: -125, estado: "Despejado" },
+      { dia: "Sábado", min: -147, max: -130, estado: "Ventoso" },
+      { dia: "Domingo", min: -150, max: -135, estado: "Tormenta" },
     ],
   },
   {
@@ -134,13 +134,13 @@ const lugares = [
     estadoActual: "Helado",
     modifier: "frozen",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -200, max: -188, estado: "Helado" },
-      { dia: "Martes",   min: -198, max: -190, estado: "Helado" },
-      { dia: "Miércoles",min: -202, max: -186, estado: "Nublado" },
-      { dia: "Jueves",   min: -195, max: -185, estado: "Helado" },
-      { dia: "Viernes",  min: -197, max: -187, estado: "Nublado" },
-      { dia: "Sábado",   min: -200, max: -190, estado: "Helado" },
-      { dia: "Domingo",  min: -196, max: -188, estado: "Helado" },
+      { dia: "Lunes", min: -200, max: -188, estado: "Helado" },
+      { dia: "Martes", min: -198, max: -190, estado: "Helado" },
+      { dia: "Miércoles", min: -202, max: -186, estado: "Nublado" },
+      { dia: "Jueves", min: -195, max: -185, estado: "Helado" },
+      { dia: "Viernes", min: -197, max: -187, estado: "Nublado" },
+      { dia: "Sábado", min: -200, max: -190, estado: "Helado" },
+      { dia: "Domingo", min: -196, max: -188, estado: "Helado" },
     ],
   },
   {
@@ -152,13 +152,13 @@ const lugares = [
     estadoActual: "Tormenta helada",
     modifier: "frozen",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -210, max: -190, estado: "Tormenta helada" },
-      { dia: "Martes",   min: -205, max: -195, estado: "Tormenta helada" },
-      { dia: "Miércoles",min: -208, max: -192, estado: "Ventoso" },
-      { dia: "Jueves",   min: -200, max: -188, estado: "Tormenta helada" },
-      { dia: "Viernes",  min: -202, max: -190, estado: "Ventoso" },
-      { dia: "Sábado",   min: -207, max: -193, estado: "Tormenta helada" },
-      { dia: "Domingo",  min: -210, max: -196, estado: "Tormenta helada" },
+      { dia: "Lunes", min: -210, max: -190, estado: "Tormenta helada" },
+      { dia: "Martes", min: -205, max: -195, estado: "Tormenta helada" },
+      { dia: "Miércoles", min: -208, max: -192, estado: "Ventoso" },
+      { dia: "Jueves", min: -200, max: -188, estado: "Tormenta helada" },
+      { dia: "Viernes", min: -202, max: -190, estado: "Ventoso" },
+      { dia: "Sábado", min: -207, max: -193, estado: "Tormenta helada" },
+      { dia: "Domingo", min: -210, max: -196, estado: "Tormenta helada" },
     ],
   },
   {
@@ -170,13 +170,13 @@ const lugares = [
     estadoActual: "Magma",
     modifier: "hot",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: 1900, max: 2100, estado: "Magma" },
-      { dia: "Martes",   min: 1950, max: 2150, estado: "Magma" },
-      { dia: "Miércoles",min: 1880, max: 2080, estado: "Erupción" },
-      { dia: "Jueves",   min: 2000, max: 2200, estado: "Erupción" },
-      { dia: "Viernes",  min: 1920, max: 2120, estado: "Magma" },
-      { dia: "Sábado",   min: 1960, max: 2060, estado: "Magma" },
-      { dia: "Domingo",  min: 1990, max: 2090, estado: "Erupción" },
+      { dia: "Lunes", min: 1900, max: 2100, estado: "Magma" },
+      { dia: "Martes", min: 1950, max: 2150, estado: "Magma" },
+      { dia: "Miércoles", min: 1880, max: 2080, estado: "Erupción" },
+      { dia: "Jueves", min: 2000, max: 2200, estado: "Erupción" },
+      { dia: "Viernes", min: 1920, max: 2120, estado: "Magma" },
+      { dia: "Sábado", min: 1960, max: 2060, estado: "Magma" },
+      { dia: "Domingo", min: 1990, max: 2090, estado: "Erupción" },
     ],
   },
   {
@@ -188,13 +188,13 @@ const lugares = [
     estadoActual: "Lluvia de silicatos",
     modifier: "hot",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: 1150, max: 1250, estado: "Lluvia de silicatos" },
-      { dia: "Martes",   min: 1180, max: 1270, estado: "Lluvia de silicatos" },
-      { dia: "Miércoles",min: 1160, max: 1240, estado: "Ventisca" },
-      { dia: "Jueves",   min: 1190, max: 1280, estado: "Lluvia de silicatos" },
-      { dia: "Viernes",  min: 1170, max: 1260, estado: "Ventisca" },
-      { dia: "Sábado",   min: 1155, max: 1245, estado: "Lluvia de silicatos" },
-      { dia: "Domingo",  min: 1185, max: 1275, estado: "Lluvia de silicatos" },
+      { dia: "Lunes", min: 1150, max: 1250, estado: "Lluvia de silicatos" },
+      { dia: "Martes", min: 1180, max: 1270, estado: "Lluvia de silicatos" },
+      { dia: "Miércoles", min: 1160, max: 1240, estado: "Ventisca" },
+      { dia: "Jueves", min: 1190, max: 1280, estado: "Lluvia de silicatos" },
+      { dia: "Viernes", min: 1170, max: 1260, estado: "Ventisca" },
+      { dia: "Sábado", min: 1155, max: 1245, estado: "Lluvia de silicatos" },
+      { dia: "Domingo", min: 1185, max: 1275, estado: "Lluvia de silicatos" },
     ],
   },
   {
@@ -206,17 +206,16 @@ const lugares = [
     estadoActual: "Congelado",
     modifier: "frozen",
     pronosticoSemanal: [
-      { dia: "Lunes",    min: -225, max: -215, estado: "Congelado" },
-      { dia: "Martes",   min: -222, max: -218, estado: "Congelado" },
-      { dia: "Miércoles",min: -228, max: -212, estado: "Ventisca" },
-      { dia: "Jueves",   min: -220, max: -210, estado: "Congelado" },
-      { dia: "Viernes",  min: -223, max: -213, estado: "Ventisca" },
-      { dia: "Sábado",   min: -226, max: -216, estado: "Congelado" },
-      { dia: "Domingo",  min: -221, max: -211, estado: "Congelado" },
+      { dia: "Lunes", min: -225, max: -215, estado: "Congelado" },
+      { dia: "Martes", min: -222, max: -218, estado: "Congelado" },
+      { dia: "Miércoles", min: -228, max: -212, estado: "Ventisca" },
+      { dia: "Jueves", min: -220, max: -210, estado: "Congelado" },
+      { dia: "Viernes", min: -223, max: -213, estado: "Ventisca" },
+      { dia: "Sábado", min: -226, max: -216, estado: "Congelado" },
+      { dia: "Domingo", min: -221, max: -211, estado: "Congelado" },
     ],
   },
 ];
- 
 
 function obtenerLugarPorId(id) {
   for (let i = 0; i < lugares.length; i++) {
@@ -226,36 +225,34 @@ function obtenerLugarPorId(id) {
   }
   return null;
 }
- 
-
 
 function calcularEstadisticas(pronostico) {
   if (!pronostico || pronostico.length === 0) {
     return null;
   }
- 
+
   let minGlobal = pronostico[0].min;
   let maxGlobal = pronostico[0].max;
   let sumaPromedios = 0;
   const conteoEstados = {};
- 
+
   for (let i = 0; i < pronostico.length; i++) {
     const dia = pronostico[i];
- 
+
     // Mínimo global
     if (dia.min < minGlobal) {
       minGlobal = dia.min;
     }
- 
+
     // Máximo global
     if (dia.max > maxGlobal) {
       maxGlobal = dia.max;
     }
- 
+
     // Suma de promedios diarios para el promedio semanal
     const promedioDia = (dia.min + dia.max) / 2;
     sumaPromedios += promedioDia;
- 
+
     // Conteo por tipo de clima
     if (conteoEstados[dia.estado] === undefined) {
       conteoEstados[dia.estado] = 1;
@@ -263,9 +260,9 @@ function calcularEstadisticas(pronostico) {
       conteoEstados[dia.estado]++;
     }
   }
- 
+
   const promedio = Math.round(sumaPromedios / pronostico.length);
- 
+
   // Determinar el estado más frecuente
   let estadoMasFrecuente = "";
   let maxConteo = 0;
@@ -275,12 +272,12 @@ function calcularEstadisticas(pronostico) {
       estadoMasFrecuente = estado;
     }
   }
- 
+
   // Generar resumen textual basado en los datos
   let resumen = "";
   const totalDias = pronostico.length;
   const proporcionMax = maxConteo / totalDias;
- 
+
   if (proporcionMax >= 0.7) {
     resumen = `Semana mayormente ${estadoMasFrecuente.toLowerCase()}.`;
   } else if (proporcionMax >= 0.4) {
@@ -288,7 +285,7 @@ function calcularEstadisticas(pronostico) {
   } else {
     resumen = `Semana variable, con varios tipos de clima.`;
   }
- 
+
   // Añadir contexto de temperatura
   if (promedio > 1000) {
     resumen += " Temperaturas extremadamente altas: condiciones letales.";
@@ -303,7 +300,7 @@ function calcularEstadisticas(pronostico) {
   } else {
     resumen += " Temperaturas criogénicas: frío extremo.";
   }
- 
+
   return {
     min: minGlobal,
     max: maxGlobal,
@@ -314,34 +311,33 @@ function calcularEstadisticas(pronostico) {
   };
 }
 
-
 function calcularEstadisticas(pronostico) {
   if (!pronostico || pronostico.length === 0) {
     return null;
   }
- 
+
   let minGlobal = pronostico[0].min;
   let maxGlobal = pronostico[0].max;
   let sumaPromedios = 0;
   const conteoEstados = {};
- 
+
   for (let i = 0; i < pronostico.length; i++) {
     const dia = pronostico[i];
- 
+
     // Mínimo global
     if (dia.min < minGlobal) {
       minGlobal = dia.min;
     }
- 
+
     // Máximo global
     if (dia.max > maxGlobal) {
       maxGlobal = dia.max;
     }
- 
+
     // Suma de promedios diarios para el promedio semanal
     const promedioDia = (dia.min + dia.max) / 2;
     sumaPromedios += promedioDia;
- 
+
     // Conteo por tipo de clima
     if (conteoEstados[dia.estado] === undefined) {
       conteoEstados[dia.estado] = 1;
@@ -349,9 +345,9 @@ function calcularEstadisticas(pronostico) {
       conteoEstados[dia.estado]++;
     }
   }
- 
+
   const promedio = Math.round(sumaPromedios / pronostico.length);
- 
+
   // Determinar el estado más frecuente
   let estadoMasFrecuente = "";
   let maxConteo = 0;
@@ -361,12 +357,12 @@ function calcularEstadisticas(pronostico) {
       estadoMasFrecuente = estado;
     }
   }
- 
+
   // Generar resumen textual basado en los datos
   let resumen = "";
   const totalDias = pronostico.length;
   const proporcionMax = maxConteo / totalDias;
- 
+
   if (proporcionMax >= 0.7) {
     resumen = `Semana mayormente ${estadoMasFrecuente.toLowerCase()}.`;
   } else if (proporcionMax >= 0.4) {
@@ -374,7 +370,7 @@ function calcularEstadisticas(pronostico) {
   } else {
     resumen = `Semana variable, con varios tipos de clima.`;
   }
- 
+
   // Añadir contexto de temperatura
   if (promedio > 1000) {
     resumen += " Temperaturas extremadamente altas: condiciones letales.";
@@ -389,7 +385,7 @@ function calcularEstadisticas(pronostico) {
   } else {
     resumen += " Temperaturas criogénicas: frío extremo.";
   }
- 
+
   return {
     min: minGlobal,
     max: maxGlobal,
@@ -399,7 +395,6 @@ function calcularEstadisticas(pronostico) {
     resumen,
   };
 }
- 
 
 //Color
 
@@ -430,17 +425,16 @@ const colorMap = {
     border: "rgba(129,140,248,0.3)",
   },
 };
- 
 
 //Render y estilos
 const gridContainer = document.getElementById("planetas-grid");
- 
+
 if (gridContainer) {
   for (let i = 0; i < lugares.length; i++) {
     const lugar = lugares[i];
     const colDiv = document.createElement("div");
     colDiv.className = "col-md-4";
- 
+
     const style = colorMap[lugar.modifier] || colorMap.mild;
     const tempBadge = `
       <span class="badge" style="
@@ -453,7 +447,7 @@ if (gridContainer) {
       ">
         ${lugar.tempActual > 0 ? "+" : ""}${lugar.tempActual} °C · ${lugar.estadoActual}
       </span>`;
- 
+
     colDiv.innerHTML = `
       <article class="card h-100">
         <img src="${lugar.img}" class="card-img-top" alt="Imagen de ${lugar.nombre}" />
@@ -466,14 +460,14 @@ if (gridContainer) {
           </a>
         </div>
       </article>`;
- 
+
     gridContainer.appendChild(colDiv);
   }
 }
- 
+
 const params = new URLSearchParams(window.location.search);
 const planetaId = params.get("planeta");
- 
+
 const nombreEl = document.getElementById("nombre-planeta");
 const imagenEl = document.getElementById("imagen-planeta");
 const descEl = document.getElementById("descripcion-planeta");
@@ -481,10 +475,10 @@ const tempEl = document.getElementById("temperatura");
 const breadcrumb = document.getElementById("breadcrumb-planeta");
 const pronosticoContainer = document.getElementById("pronostico-semanal");
 const statsContainer = document.getElementById("estadisticas-semana");
- 
+
 if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
   const data = obtenerLugarPorId(planetaId);
- 
+
   if (data) {
     // Datos básicos
     nombreEl.textContent = data.nombre;
@@ -492,7 +486,7 @@ if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
     imagenEl.alt = "Imagen de " + data.nombre;
     descEl.textContent = data.desc;
     tempEl.textContent = `${data.tempActual > 0 ? "+" : ""}${data.tempActual} °C`;
- 
+
     // Estilo del badge de temperatura
     if (data.modifier) {
       const style = colorMap[data.modifier];
@@ -506,10 +500,9 @@ if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
         tempEl.style.fontWeight = "700";
       }
     }
- 
+
     if (breadcrumb) breadcrumb.textContent = data.nombre;
     document.title = data.nombre + " — Exploración Espacial";
-
 
     // ── Pronóstico semanal ──
     if (pronosticoContainer && data.pronosticoSemanal) {
@@ -519,7 +512,7 @@ if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
           📅 Pronóstico Semanal
         </h3>
         <div class="row g-2">`;
- 
+
       for (let i = 0; i < data.pronosticoSemanal.length; i++) {
         const dia = data.pronosticoSemanal[i];
         pronosticoHTML += `
@@ -543,10 +536,123 @@ if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
             </div>
           </div>`;
       }
- 
+
       pronosticoHTML += `</div>`;
       pronosticoContainer.innerHTML = pronosticoHTML;
     }
 
+    // ── Estadísticas de la semana ──
+    if (statsContainer && data.pronosticoSemanal) {
+      const stats = calcularEstadisticas(data.pronosticoSemanal);
+      const style = colorMap[data.modifier] || colorMap.mild;
 
-    
+      // Construir lista de conteos por estado
+      let conteoHTML = "";
+      for (const estado in stats.conteoEstados) {
+        const cantidad = stats.conteoEstados[estado];
+        const plural = cantidad === 1 ? "día" : "días";
+        conteoHTML += `
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <span style="color:#94a3b8;font-size:0.85rem;">${estado}</span>
+            <span style="color:${style.color};font-weight:700;">${cantidad} ${plural}</span>
+          </div>`;
+      }
+
+      statsContainer.innerHTML = `
+        <h3 class="text-info mb-3" style="font-size:1rem;letter-spacing:2px;text-transform:uppercase;">
+          📊 Estadísticas de la Semana
+        </h3>
+        <div class="row g-3 mb-3">
+          <div class="col-4">
+            <div class="text-center p-3" style="
+              background:rgba(239,68,68,0.1);
+              border:1px solid rgba(239,68,68,0.2);
+              border-radius:12px;
+            ">
+              <div style="font-size:0.65rem;color:#94a3b8;letter-spacing:1px;text-transform:uppercase;">Máxima</div>
+              <div style="font-size:1.1rem;font-weight:700;color:#fca5a5;">
+                ${stats.max > 0 ? "+" : ""}${stats.max}°C
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text-center p-3" style="
+              background:rgba(56,189,248,0.1);
+              border:1px solid rgba(56,189,248,0.2);
+              border-radius:12px;
+            ">
+              <div style="font-size:0.65rem;color:#94a3b8;letter-spacing:1px;text-transform:uppercase;">Mínima</div>
+              <div style="font-size:1.1rem;font-weight:700;color:#7dd3fc;">
+                ${stats.min > 0 ? "+" : ""}${stats.min}°C
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text-center p-3" style="
+              background:rgba(129,140,248,0.1);
+              border:1px solid rgba(129,140,248,0.2);
+              border-radius:12px;
+            ">
+              <div style="font-size:0.65rem;color:#94a3b8;letter-spacing:1px;text-transform:uppercase;">Promedio</div>
+              <div style="font-size:1.1rem;font-weight:700;color:#c4b5fd;">
+                ${stats.promedio > 0 ? "+" : ""}${stats.promedio}°C
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="mb-3 p-3" style="
+          background:rgba(255,255,255,0.03);
+          border:1px solid rgba(255,255,255,0.08);
+          border-radius:12px;
+        ">
+          <div style="font-size:0.7rem;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">
+            Días por tipo de clima
+          </div>
+          ${conteoHTML}
+        </div>
+ 
+        <div class="p-3" style="
+          background: linear-gradient(135deg, ${style.bg}, rgba(0,0,0,0.3));
+          border: 1px solid ${style.border};
+          border-radius:12px;
+          font-size:0.9rem;
+          color:${style.color};
+          font-style:italic;
+        ">
+          💬 ${stats.resumen}
+        </div>`;
+    }
+  }
+}
+
+//  BOTONES SCROLL
+
+const btnTop = document.getElementById("go-to-top");
+const btnBottom = document.getElementById("go-to-bottom");
+
+if (btnBottom) {
+  btnBottom.addEventListener("click", () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  });
+}
+
+if (btnTop) {
+  btnTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+//  BOTÓN TEMPERATURA (detalle)
+
+const btnTemp = document.getElementById("btn-temperatura");
+const tempBox = document.getElementById("temperatura");
+
+if (btnTemp && tempBox) {
+  btnTemp.addEventListener("click", () => {
+    tempBox.classList.remove("visible");
+    void tempBox.offsetWidth;
+    tempBox.classList.add("visible");
+    btnTemp.style.display = "none";
+  });
+}
