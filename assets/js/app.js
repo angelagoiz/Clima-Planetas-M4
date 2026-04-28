@@ -217,3 +217,186 @@ const lugares = [
   },
 ];
  
+
+function obtenerLugarPorId(id) {
+  for (let i = 0; i < lugares.length; i++) {
+    if (lugares[i].id === id) {
+      return lugares[i];
+    }
+  }
+  return null;
+}
+ 
+
+
+function calcularEstadisticas(pronostico) {
+  if (!pronostico || pronostico.length === 0) {
+    return null;
+  }
+ 
+  let minGlobal = pronostico[0].min;
+  let maxGlobal = pronostico[0].max;
+  let sumaPromedios = 0;
+  const conteoEstados = {};
+ 
+  for (let i = 0; i < pronostico.length; i++) {
+    const dia = pronostico[i];
+ 
+    // Mínimo global
+    if (dia.min < minGlobal) {
+      minGlobal = dia.min;
+    }
+ 
+    // Máximo global
+    if (dia.max > maxGlobal) {
+      maxGlobal = dia.max;
+    }
+ 
+    // Suma de promedios diarios para el promedio semanal
+    const promedioDia = (dia.min + dia.max) / 2;
+    sumaPromedios += promedioDia;
+ 
+    // Conteo por tipo de clima
+    if (conteoEstados[dia.estado] === undefined) {
+      conteoEstados[dia.estado] = 1;
+    } else {
+      conteoEstados[dia.estado]++;
+    }
+  }
+ 
+  const promedio = Math.round(sumaPromedios / pronostico.length);
+ 
+  // Determinar el estado más frecuente
+  let estadoMasFrecuente = "";
+  let maxConteo = 0;
+  for (const estado in conteoEstados) {
+    if (conteoEstados[estado] > maxConteo) {
+      maxConteo = conteoEstados[estado];
+      estadoMasFrecuente = estado;
+    }
+  }
+ 
+  // Generar resumen textual basado en los datos
+  let resumen = "";
+  const totalDias = pronostico.length;
+  const proporcionMax = maxConteo / totalDias;
+ 
+  if (proporcionMax >= 0.7) {
+    resumen = `Semana mayormente ${estadoMasFrecuente.toLowerCase()}.`;
+  } else if (proporcionMax >= 0.4) {
+    resumen = `Semana con predominio de condiciones ${estadoMasFrecuente.toLowerCase()}.`;
+  } else {
+    resumen = `Semana variable, con varios tipos de clima.`;
+  }
+ 
+  // Añadir contexto de temperatura
+  if (promedio > 1000) {
+    resumen += " Temperaturas extremadamente altas: condiciones letales.";
+  } else if (promedio > 100) {
+    resumen += " Calor abrasador sin posibilidad de vida conocida.";
+  } else if (promedio > 0) {
+    resumen += " Temperaturas cálidas sobre el punto de congelación.";
+  } else if (promedio > -50) {
+    resumen += " Semana fría pero con rangos moderados.";
+  } else if (promedio > -150) {
+    resumen += " Semana muy fría, extremos gélidos.";
+  } else {
+    resumen += " Temperaturas criogénicas: frío extremo.";
+  }
+ 
+  return {
+    min: minGlobal,
+    max: maxGlobal,
+    promedio,
+    conteoEstados,
+    estadoMasFrecuente,
+    resumen,
+  };
+}
+
+
+function calcularEstadisticas(pronostico) {
+  if (!pronostico || pronostico.length === 0) {
+    return null;
+  }
+ 
+  let minGlobal = pronostico[0].min;
+  let maxGlobal = pronostico[0].max;
+  let sumaPromedios = 0;
+  const conteoEstados = {};
+ 
+  for (let i = 0; i < pronostico.length; i++) {
+    const dia = pronostico[i];
+ 
+    // Mínimo global
+    if (dia.min < minGlobal) {
+      minGlobal = dia.min;
+    }
+ 
+    // Máximo global
+    if (dia.max > maxGlobal) {
+      maxGlobal = dia.max;
+    }
+ 
+    // Suma de promedios diarios para el promedio semanal
+    const promedioDia = (dia.min + dia.max) / 2;
+    sumaPromedios += promedioDia;
+ 
+    // Conteo por tipo de clima
+    if (conteoEstados[dia.estado] === undefined) {
+      conteoEstados[dia.estado] = 1;
+    } else {
+      conteoEstados[dia.estado]++;
+    }
+  }
+ 
+  const promedio = Math.round(sumaPromedios / pronostico.length);
+ 
+  // Determinar el estado más frecuente
+  let estadoMasFrecuente = "";
+  let maxConteo = 0;
+  for (const estado in conteoEstados) {
+    if (conteoEstados[estado] > maxConteo) {
+      maxConteo = conteoEstados[estado];
+      estadoMasFrecuente = estado;
+    }
+  }
+ 
+  // Generar resumen textual basado en los datos
+  let resumen = "";
+  const totalDias = pronostico.length;
+  const proporcionMax = maxConteo / totalDias;
+ 
+  if (proporcionMax >= 0.7) {
+    resumen = `Semana mayormente ${estadoMasFrecuente.toLowerCase()}.`;
+  } else if (proporcionMax >= 0.4) {
+    resumen = `Semana con predominio de condiciones ${estadoMasFrecuente.toLowerCase()}.`;
+  } else {
+    resumen = `Semana variable, con varios tipos de clima.`;
+  }
+ 
+  // Añadir contexto de temperatura
+  if (promedio > 1000) {
+    resumen += " Temperaturas extremadamente altas: condiciones letales.";
+  } else if (promedio > 100) {
+    resumen += " Calor abrasador sin posibilidad de vida conocida.";
+  } else if (promedio > 0) {
+    resumen += " Temperaturas cálidas sobre el punto de congelación.";
+  } else if (promedio > -50) {
+    resumen += " Semana fría pero con rangos moderados.";
+  } else if (promedio > -150) {
+    resumen += " Semana muy fría, extremos gélidos.";
+  } else {
+    resumen += " Temperaturas criogénicas: frío extremo.";
+  }
+ 
+  return {
+    min: minGlobal,
+    max: maxGlobal,
+    promedio,
+    conteoEstados,
+    estadoMasFrecuente,
+    resumen,
+  };
+}
+ 
