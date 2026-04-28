@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png")
+    repeat;
+  animation: starDrift 80s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+@keyframes starDrift {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-600px) translateX(-100px);
+  }
+}
+
+main,
+header,
+footer,
+section {
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

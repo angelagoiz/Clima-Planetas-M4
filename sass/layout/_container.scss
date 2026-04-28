@@ -1,0 +1,54 @@
+.planet-detail {
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 0;
+
+  &__card {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px darkblue;
+  }
+
+  &__image-wrap {
+    width: 100%;
+    padding: 100px 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(56, 189, 248, 0.08) 0%,
+      transparent 70%
+    );
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+  }
+
+  &__image {
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.3));
+    animation: floatPlanet 6s ease-in-out infinite;
+  }
+
+  &__body {
+    padding: 100px 0;
+    text-align: center;
+    padding: 100px 20px;
+  }
+}
+
+@keyframes floatPlanet {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1deg);
+  }
+}
