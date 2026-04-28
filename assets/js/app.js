@@ -432,3 +432,121 @@ const colorMap = {
 };
  
 
+//Render y estilos
+const gridContainer = document.getElementById("planetas-grid");
+ 
+if (gridContainer) {
+  for (let i = 0; i < lugares.length; i++) {
+    const lugar = lugares[i];
+    const colDiv = document.createElement("div");
+    colDiv.className = "col-md-4";
+ 
+    const style = colorMap[lugar.modifier] || colorMap.mild;
+    const tempBadge = `
+      <span class="badge" style="
+        background:${style.bg};
+        color:${style.color};
+        border:1px solid ${style.border};
+        font-size:0.8rem;
+        padding:4px 10px;
+        border-radius:20px;
+      ">
+        ${lugar.tempActual > 0 ? "+" : ""}${lugar.tempActual} °C · ${lugar.estadoActual}
+      </span>`;
+ 
+    colDiv.innerHTML = `
+      <article class="card h-100">
+        <img src="${lugar.img}" class="card-img-top" alt="Imagen de ${lugar.nombre}" />
+        <div class="card-body text-center">
+          <h5 class="titulo-planeta">${lugar.nombre.toUpperCase()}</h5>
+          <p>${lugar.desc.substring(0, 100)}…</p>
+          <div class="mb-2">${tempBadge}</div>
+          <a href="detalle.html?planeta=${lugar.id}" class="btn btn-primary btn-planeta">
+            Ver más
+          </a>
+        </div>
+      </article>`;
+ 
+    gridContainer.appendChild(colDiv);
+  }
+}
+ 
+const params = new URLSearchParams(window.location.search);
+const planetaId = params.get("planeta");
+ 
+const nombreEl = document.getElementById("nombre-planeta");
+const imagenEl = document.getElementById("imagen-planeta");
+const descEl = document.getElementById("descripcion-planeta");
+const tempEl = document.getElementById("temperatura");
+const breadcrumb = document.getElementById("breadcrumb-planeta");
+const pronosticoContainer = document.getElementById("pronostico-semanal");
+const statsContainer = document.getElementById("estadisticas-semana");
+ 
+if (planetaId && nombreEl && imagenEl && descEl && tempEl) {
+  const data = obtenerLugarPorId(planetaId);
+ 
+  if (data) {
+    // Datos básicos
+    nombreEl.textContent = data.nombre;
+    imagenEl.src = data.img;
+    imagenEl.alt = "Imagen de " + data.nombre;
+    descEl.textContent = data.desc;
+    tempEl.textContent = `${data.tempActual > 0 ? "+" : ""}${data.tempActual} °C`;
+ 
+    // Estilo del badge de temperatura
+    if (data.modifier) {
+      const style = colorMap[data.modifier];
+      if (style) {
+        tempEl.style.background = style.bg;
+        tempEl.style.color = style.color;
+        tempEl.style.border = "1px solid " + style.border;
+        tempEl.style.borderRadius = "20px";
+        tempEl.style.padding = "6px 16px";
+        tempEl.style.display = "inline-block";
+        tempEl.style.fontWeight = "700";
+      }
+    }
+ 
+    if (breadcrumb) breadcrumb.textContent = data.nombre;
+    document.title = data.nombre + " — Exploración Espacial";
+
+
+    // ── Pronóstico semanal ──
+    if (pronosticoContainer && data.pronosticoSemanal) {
+      const style = colorMap[data.modifier] || colorMap.mild;
+      let pronosticoHTML = `
+        <h3 class="text-info mb-3" style="font-size:1rem;letter-spacing:2px;text-transform:uppercase;">
+          📅 Pronóstico Semanal
+        </h3>
+        <div class="row g-2">`;
+ 
+      for (let i = 0; i < data.pronosticoSemanal.length; i++) {
+        const dia = data.pronosticoSemanal[i];
+        pronosticoHTML += `
+          <div class="col-6 col-md-3">
+            <div class="pronostico-card text-center p-2" style="
+              background: rgba(255,255,255,0.04);
+              border: 1px solid rgba(255,255,255,0.1);
+              border-radius: 12px;
+            ">
+              <div style="font-size:0.7rem;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">
+                ${dia.dia}
+              </div>
+              <div style="font-size:0.85rem;color:${style.color};margin:4px 0;">
+                ${dia.estado}
+              </div>
+              <div style="font-size:0.75rem;color:#ffffff;">
+                <span style="color:#fca5a5;">▲ ${dia.max > 0 ? "+" : ""}${dia.max}°</span>
+                &nbsp;
+                <span style="color:#7dd3fc;">▼ ${dia.min > 0 ? "+" : ""}${dia.min}°</span>
+              </div>
+            </div>
+          </div>`;
+      }
+ 
+      pronosticoHTML += `</div>`;
+      pronosticoContainer.innerHTML = pronosticoHTML;
+    }
+
+
+    
