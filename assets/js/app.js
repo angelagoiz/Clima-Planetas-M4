@@ -400,3 +400,35 @@ function calcularEstadisticas(pronostico) {
   };
 }
  
+
+//Color
+
+const colorMap = {
+  hot: {
+    bg: "rgba(239,68,68,0.25)",
+    color: "#fca5a5",
+    border: "rgba(239,68,68,0.3)",
+  },
+  warm: {
+    bg: "rgba(249,115,22,0.25)",
+    color: "#fdba74",
+    border: "rgba(249,115,22,0.3)",
+  },
+  mild: {
+    bg: "rgba(34,197,94,0.2)",
+    color: "#86efac",
+    border: "rgba(34,197,94,0.3)",
+  },
+  cold: {
+    bg: "rgba(56,189,248,0.2)",
+    color: "#7dd3fc",
+    border: "rgba(56,189,248,0.3)",
+  },
+  frozen: {
+    bg: "rgba(129,140,248,0.2)",
+    color: "#c4b5fd",
+    border: "rgba(129,140,248,0.3)",
+  },
+};
+ 
+
